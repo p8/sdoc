@@ -7,6 +7,10 @@ body {
   line-height: 1.25em;
 }
 
+.banner, #bodyContent {
+  margin-left: 300px;
+}
+
 a {
   color: #00F;
   text-decoration: none;
@@ -96,20 +100,20 @@ li
     border-bottom: 1px solid #ccc;
     padding: 1em 2em 0.5em 2em;
 }
-.banner h1
+.banner h2
 {
     font-size: 1.2em;
     margin: 0;
 }
 
-.banner h1 .type
+.banner h2 .type
 {
     font-size: 0.833em;
     display:block;
 }
 
-.banner h1 .type,
-.banner h1 .parent
+.banner h2 .type,
+.banner h2 .parent
 {
     color: #666;
 }
@@ -164,6 +168,7 @@ pre
   margin: 2em;
   margin-left: 3.5em;
   margin-right: 3.5em;
+  max-width: 980px;
 }
 
 
@@ -233,6 +238,7 @@ tt {
   padding: 0.5em;
   border: #ffe0bb dotted 1px;
   background: #fffde8;
+  overflow-x: scroll;
 }
 
 .method {

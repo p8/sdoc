@@ -1,23 +1,23 @@
 /* Panel (begin) */
     .panel
     {
-        position: absolute;
-        width: 100%;
+        position: fixed;
+        width: 300px;
         height: 100%;
-        top: 0;
-        left: 0;
         background: #FFF;
         z-index: 2;
         font-family: "Helvetica Neue", "Arial", sans-serif;
-        //zoom: 1;
+        overflow-x: hidden;
+        border-right: 1px #ccc solid;
+        line-height: 1;
     }
-    
+
     .panel_tree .results,
     .panel_results .tree
     {
         display: none;
     }
-    
+
     /* Header with search box (begin) */
         .panel .header
         {
@@ -55,18 +55,16 @@
             cursor: text;
         }
 
-        .panel .header table input
+        .panel .header input
         {
             width: 100%;
             box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
             display: inline-block;
             -webkit-appearance: searchfield;
             height: 22px;
             //height: auto;
         }
-        
+
     /* Header with search box (end) */
 
     /* Results and tree (begin) */
@@ -81,18 +79,16 @@
     /* Results (begin) */
         .panel .result
         {
-            position: absolute;
-            top: 30px;
+            position: relative;
             bottom: 0;
+            top: 40px;
             left: 0;
             width: 100%;
-            //height: expression((this.parentNode.offsetHeight - 31));
             overflow-y: scroll;
             overflow-x: hidden;
             -overflow-y: hidden;
             background: #EDF3FE url(../i/results_bg.png);
             z-index: 2;
-            //zoom:1;
         }
 
         .panel .result ul
