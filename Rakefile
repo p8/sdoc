@@ -26,7 +26,7 @@ namespace :test do
   RDoc::Task.new(:rails) do |rdoc|
     rdoc.rdoc_dir = 'doc/rails'
     rdoc.generator = 'sdoc'
-    rdoc.template = 'rails'
+    rdoc.template = 'sdoc'
 
     rdoc.rdoc_files.include("rails/")
   end
